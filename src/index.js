@@ -1,5 +1,7 @@
 // example: https://codepen.io/freeCodeCamp/full/JXrLLE
 // https://github.com/alanpaulprice/markdown-previewer
+//TODO: sort out styles
+//TODO: convert output string into html
 //TODO: add lodash for debounce
 
 import React, { Component } from 'react';
@@ -18,9 +20,13 @@ class App extends Component {
   }
   render() {
     return (
-      <div>
-        <InputArea updateInputState={ (value) => this.updateInputState(value) }/>
-        <OutputArea output={this.state.output}/>
+      <div style={appDivStyle}>
+        <InputArea
+          updateInputState={ (value) => this.updateInputState(value) }
+        />
+        <OutputArea
+          output={this.state.output}
+        />
       </div>
     );
   }
@@ -28,12 +34,18 @@ class App extends Component {
   updateInputState(value) {
     this.setState({
       input: value,
-      output: value
+      output: marked(value)
     });
   }
 }
 
+const appDivStyle = {
+  display: 'flex',
+  height: '100%',
+  backgroundColor: 'green'
+}
+
 ReactDOM.render(
   <App/>,
-  document.getElementById('container')
+  document.body
 );

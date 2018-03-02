@@ -11,6 +11,9 @@ function outputArea(props) {
 const divStyle = {
   display: 'inline-block',
   width: '50%',
+  backgroundColor: 'red',
+  minHeight: '500px'
+  //minHeight: '20px'
 };
 
 export default outputArea;

@@ -8,9 +8,9 @@ class InputArea extends Component {
 
   render() {
     return (
-      <input
+      <textArea
         autoFocus
-        type='text'
+        rows='20'
         style={inputStyle}
         value={ this.state.markdown }
         onChange={ event => this.onInputChange(event.target.value) }
@@ -25,8 +25,10 @@ class InputArea extends Component {
 }
 
 const inputStyle = {
-  display: 'inline-block',
+  flex: '1 1 0',
   width: '50%',
+  resize: 'none',
+  minHeight: '500px'
 };
 
 export default InputArea;
