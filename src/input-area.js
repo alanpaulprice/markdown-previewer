@@ -8,7 +8,7 @@ class InputArea extends Component {
 
   render() {
     return (
-      <textArea
+      <textarea
         autoFocus
         rows='20'
         style={inputStyle}

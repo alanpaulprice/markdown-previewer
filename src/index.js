@@ -7,6 +7,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import marked from 'marked';
+
 import InputArea from './input-area';
 import OutputArea from './output-area';
 
@@ -14,7 +15,6 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      input: '',
       output: ''
     };
   }
@@ -33,7 +33,6 @@ class App extends Component {
 
   updateInputState(value) {
     this.setState({
-      input: value,
       output: marked(value)
     });
   }
@@ -42,10 +41,9 @@ class App extends Component {
 const appDivStyle = {
   display: 'flex',
   height: '100%',
-  backgroundColor: 'green'
 }
 
 ReactDOM.render(
   <App/>,
-  document.body
+  document.getElementById('container')
 );

@@ -1,9 +1,16 @@
 import React from 'react';
 
 function outputArea(props) {
+
+  function createMarkup() {
+    return { __html: props.output}
+  }
+
   return (
-    <div style={ divStyle }>
-      {props.output}
+    <div
+      style={ divStyle }
+      dangerouslySetInnerHTML={createMarkup()}
+      >
     </div>
   );
 }
@@ -11,9 +18,8 @@ function outputArea(props) {
 const divStyle = {
   display: 'inline-block',
   width: '50%',
-  backgroundColor: 'red',
+  backgroundColor: '#666',
   minHeight: '500px'
-  //minHeight: '20px'
 };
 
 export default outputArea;
