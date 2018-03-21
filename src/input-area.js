@@ -9,9 +9,10 @@ class InputArea extends Component {
   render() {
     return (
       <textarea
+        className='input-area'
         autoFocus
         rows='20'
-        style={inputStyle}
+        //style={inputStyle}
         value={ this.state.markdown }
         onChange={ event => this.onInputChange(event.target.value) }
       />
@@ -24,11 +25,16 @@ class InputArea extends Component {
   }
 }
 
-const inputStyle = {
-  flex: '1 1 0',
-  width: '50%',
-  resize: 'none',
-  minHeight: '500px'
-};
+// const inputStyle = {
+//   flex: '1 1 0',
+//   color: '#666',
+//   backgroundColor: '#fff',
+//   resize: 'none',
+//   minHeight: '500px',
+//   margin: '5px',
+//   padding: '5px',
+//   outlineWidth: '0',
+//   border: '0',
+// };
 
 export default InputArea;

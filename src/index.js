@@ -1,8 +1,9 @@
 // example: https://codepen.io/freeCodeCamp/full/JXrLLE
 // https://github.com/alanpaulprice/markdown-previewer
 //TODO: sort out styles
-//TODO: convert output string into html
-//TODO: add lodash for debounce
+//TODO: sort monospace output
+//TODO: add responsive css,
+//      make output go below, 100% width on small screens
 
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
@@ -20,7 +21,7 @@ class App extends Component {
   }
   render() {
     return (
-      <div style={appDivStyle}>
+      <div className='app'>
         <InputArea
           updateInputState={ (value) => this.updateInputState(value) }
         />
@@ -36,11 +37,6 @@ class App extends Component {
       output: marked(value)
     });
   }
-}
-
-const appDivStyle = {
-  display: 'flex',
-  height: '100%',
 }
 
 ReactDOM.render(

@@ -1,13 +1,53 @@
 * {
+  /* font-family: arial; */
+}
+
+html, body{
+  height: 100%;
+}
+
+body{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
-html, body {
+#container{
   height: 100%;
 }
 
-#container {
+.app{
+  display: flex;
   height: 100%;
+  background-color: #666;
 }
+
+.input-area{
+  flex: 1 1 0;
+  color: #666;
+  background-color: #fff;
+  resize: none;
+  min-height: 500px;
+  margin: 5px;
+  padding: 5px;
+  outline-width: 0;
+  border: 0;
+}
+
+.output-area{
+  flex: 1 1 0;
+  background-color: #fff;
+  color: #666;
+  min-height: 500px;
+  margin: 5px;
+  padding: 5px;
+}
+
+/* .app{
+  display: flex;
+  height: 100%;
+  backgroundColor: #666;
+} */
+
+/* @media screen and (max-height: 700px){
+
+} */

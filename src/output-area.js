@@ -8,18 +8,11 @@ function outputArea(props) {
 
   return (
     <div
-      style={ divStyle }
+      className='output-area'
       dangerouslySetInnerHTML={createMarkup()}
       >
     </div>
   );
 }
-
-const divStyle = {
-  display: 'inline-block',
-  width: '50%',
-  backgroundColor: '#666',
-  minHeight: '500px'
-};
 
 export default outputArea;
