@@ -1,9 +1,7 @@
 // example: https://codepen.io/freeCodeCamp/full/JXrLLE
 // https://github.com/alanpaulprice/markdown-previewer
-//TODO: sort out styles
-//TODO: sort monospace output
-//TODO: add responsive css,
-//      make output go below, 100% width on small screens
+//TODO: fix issue where output doesn't come up when resizing input smaller
+// on mobile
 
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
