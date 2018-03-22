@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class InputArea extends Component {
   constructor(props) {
     super(props);
-    this.state = { markdown: 'markdown goes here.' };
+    this.state = { markdown: '' };
   }
 
   render() {
@@ -11,6 +11,7 @@ class InputArea extends Component {
       <textarea
         className='input-area'
         autoFocus
+        placeholder='markdown goes here.'
         rows='20'
         value={ this.state.markdown }
         onChange={ event => this.onInputChange(event.target.value) }
