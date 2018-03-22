@@ -1,5 +1,5 @@
-html, body{
-  height: 100%;
+*{
+  box-sizing: border-box;
 }
 
 body{
@@ -7,27 +7,19 @@ body{
   padding: 0;
 }
 
-#container{
-  height: 100%;
-}
-
 .app{
   display: flex;
-  box-sizing: border-box;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
-  height: 100%;
-  padding: 5px;
   max-width: 960px;
+  min-width: 320px;
+  padding: 5px;
   margin: 0 auto;
 }
 
 .input-area, .output-area {
   flex: 0 0 100%;
-  box-sizing: border-box;
-  height: 500px;
   min-height: 50px;
-  min-width: 320px;
   outline-width: 0;
   padding: 5px;
   margin: 5px;
@@ -44,8 +36,8 @@ body{
 }
 
 code{
-  color: #ff0000;
-  background-color: #ffe6e6;
+  color: #008000;
+  background-color: #e6ffe6;
   padding: 2px 4px;
 }
 
