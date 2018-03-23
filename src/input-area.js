@@ -21,7 +21,7 @@ class InputArea extends Component {
 
   onInputChange(value) {
     this.setState({ markdown: value });
-    this.props.updateInputState(value);
+    this.props.updateAppState(value);
   }
 }
 

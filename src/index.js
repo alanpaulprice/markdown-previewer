@@ -16,16 +16,19 @@ class App extends Component {
     return (
       <div className='app'>
         <InputArea
-          updateInputState={ (value) => this.updateInputState(value) }
+          // passes function to InputArea as a prop,
+          // enabling onChange event to update app state
+          updateAppState={ (value) => this.updateAppState(value) }
         />
         <OutputArea
+          // passes app state 'output' to OutputArea
           output={this.state.output}
         />
       </div>
     );
   }
 
-  updateInputState(value) {
+  updateAppState(value) {
     this.setState({
       output: marked(value)
     });
