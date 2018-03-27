@@ -8,9 +8,7 @@ import OutputArea from './output-area';
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      output: ''
-    };
+    this.state = { output: '' };
   }
   render() {
     return (
@@ -27,11 +25,9 @@ class App extends Component {
       </div>
     );
   }
-
+  // updates state, triggers rerender
   updateAppState(value) {
-    this.setState({
-      output: marked(value)
-    });
+    this.setState({ output: marked(value) });
   }
 }
 

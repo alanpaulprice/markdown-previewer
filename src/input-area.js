@@ -18,7 +18,8 @@ class InputArea extends Component {
       />
     );
   }
-
+  // updates state, triggers rerender
+  // passes 'value' to function found in parent component
   onInputChange(value) {
     this.setState({ markdown: value });
     this.props.updateAppState(value);
