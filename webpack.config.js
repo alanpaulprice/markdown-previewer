@@ -9,7 +9,8 @@ module.exports = {
   devServer: {
     contentBase: './',
     historyApiFallback: true,
-    port: 1234
+    port: 1234,
+    open: true
   },
   module: {
   rules: [
