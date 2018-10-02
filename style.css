@@ -19,7 +19,7 @@ body{
 
 .input-area, .output-area{
   height: calc(50vh - 10px);
-  min-height: 50px;
+  min-height: 5vh;
   outline-width: 0;
   padding: 5px;
   border-radius: 5px;
