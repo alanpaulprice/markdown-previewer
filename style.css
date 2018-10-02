@@ -9,15 +9,15 @@ body{
 #app{
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-direction: column;
   max-width: 960px;
   min-width: 320px;
   margin: 0 auto;
   padding: 5px;
+  height: 100vh;
 }
 
 .input-area, .output-area{
-  flex: 0 0 100%;
   height: calc(50vh - 10px);
   min-height: 50px;
   outline-width: 0;
@@ -34,6 +34,8 @@ body{
 
 .output-area{
   border: 1px solid hsl(0, 0%, 75%);
+  overflow: auto;
+  flex: 1 1 0;
 }
 
 code{
