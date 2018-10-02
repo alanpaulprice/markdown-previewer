@@ -4,7 +4,6 @@
 
 body{
   margin: 0;
-  padding: 0;
 }
 
 #app{
@@ -52,7 +51,12 @@ code{
 
   .input-area{
     height: calc(100vh - 10px);
+    resize: none;
     margin-bottom: 0;
+  }
+
+  .output-area{
+    min-height: calc(100vh - 10px);
   }
 
   .app{
