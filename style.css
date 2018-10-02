@@ -18,7 +18,6 @@ body{
 }
 
 .input-area, .output-area{
-  height: calc(50vh - 10px);
   min-height: 5vh;
   outline-width: 0;
   padding: 5px;
@@ -26,6 +25,7 @@ body{
 }
 
 .input-area{
+  height: calc(50vh - 10px);
   resize: vertical;
   border: 1px solid hsl(0, 0%, 75%);
   margin-bottom: 5px;
