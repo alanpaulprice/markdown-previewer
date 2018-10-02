@@ -37,8 +37,8 @@ body{
 }
 
 code{
-  color: #008000;
-  background-color: #e6ffe6;
+  color: hsl(120, 100%, 25%);
+  background-color: hsl(120, 100%, 95%);
   padding: 2px 4px;
 }
 
